@@ -19,6 +19,36 @@ Curriculum source: [jwasham/coding-interview-university](https://github.com/jwas
 Rule: **no topic is ticked until it is implemented from scratch and 2–3 practice
 problems are solved on it.**
 
+## Building and testing
+
+C++ uses CMake (C++20) with GoogleTest fetched via `FetchContent`. Every
+`src/cpp/NN-topic/` directory is auto-discovered from the root
+`CMakeLists.txt` — no editing it to register a new module:
+
+- `*.cpp` files that aren't test files build into a static library named
+  after the directory (e.g. `02-arrays`)
+- `*_test.cpp` / `*_tests.cpp` files build into a GoogleTest executable
+  named `<topic>_test`, linked against that library, and registered with
+  ctest
+
+Python uses pytest, configured in `pyproject.toml`. `src/python` is put on
+`sys.path` (via `pythonpath`), so test files there can `import` sibling
+modules directly. Test discovery is limited to `src/python` and matches
+`test_*.py` / `*_test.py`.
+
+Commands, from the repo root:
+
+```bash
+make test-cpp   # configure + build + ctest
+make test-py    # pytest
+make test       # both
+make clean      # remove build/, .pytest_cache/, __pycache__/
+```
+
+An empty module (no `.cpp`/test files yet) is fine — the C++ side just
+builds gtest itself with no targets, and a Python run with zero collected
+tests is treated as success, not failure.
+
 ---
 
 ## Progress

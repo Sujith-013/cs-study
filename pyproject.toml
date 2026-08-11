@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+# Only look under src/python — keeps notes/, problems/, reference/ etc. out
+# of collection.
+testpaths = ["src/python"]
+# Puts src/python on sys.path so "import vector" etc. resolves modules
+# directly, without packages or editable installs.
+pythonpath = ["src/python"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-ra"
