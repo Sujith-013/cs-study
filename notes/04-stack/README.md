@@ -24,3 +24,7 @@
 
 ## 7. Resources actually used
 -
+
+### Available (from upstream)
+- [ ] [Stacks (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+- [ ] [[Review] Stacks in 3 minutes (video)](https://youtu.be/KcT3aVgrrpU)

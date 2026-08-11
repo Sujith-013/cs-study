@@ -24,3 +24,10 @@
 
 ## 7. Resources actually used
 -
+
+### Available (from upstream)
+- [ ] [Arrays CS50 Harvard University](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
+- [ ] [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+- [ ] [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)
+- [ ] [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
+- [ ] [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
