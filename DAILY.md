@@ -200,4 +200,21 @@ NN-topic: <what changed>
 02-arrays: solve 27, 88, 1089
 02-arrays: module complete
 
-<br>
+
+Several small commits per day. `git log` should read as a study history.
+
+---
+
+## When a day goes wrong
+
+- **Under an hour available:** step 6 only — one problem on the current module. Commit it.
+- **Nothing works, everything's confusing:** stop. Log what confused you and push. Come back tomorrow. Grinding a wall you don't understand teaches nothing.
+- **Missed days:** don't backfill, don't "catch up". Open the last log, read Tomorrow, start there.
+
+---
+
+## The three rules everything else serves
+
+1. **Learn and apply in the same session.** Never batch videos now and problems later — that's the mistake the whole upstream repo warns about.
+2. **Write it from memory or you don't know it.** Notes with the tab open are transcription, not learning.
+3. **The checkbox lies if the code doesn't exist.** The repo is the evidence; the checklist is only an index over it.
