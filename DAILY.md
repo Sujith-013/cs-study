@@ -85,9 +85,9 @@ Work the module's `Implement:` list top to bottom, in `src/cpp/NN-*/` and
   Then port to the other. The port is where gaps surface.
 - Run tests as you go:
 ```bash
-  make test-cpp
-  make test-py
-  make test
+make test-cpp
+make test-py
+make test
 ```
 
 **Stuck rule:** 25 minutes on one bug before looking anything up. Then look up
@@ -193,13 +193,14 @@ git log --oneline --since="1 week ago"
 
 ## Commit message format
 
+```
 NN-topic: <what changed>
 02-arrays: notes on dynamic resizing and amortized cost
 02-arrays: implement push/pop/resize in C++
 02-arrays: port vector to Python
 02-arrays: solve 27, 88, 1089
 02-arrays: module complete
-
+```
 
 Several small commits per day. `git log` should read as a study history.
 
