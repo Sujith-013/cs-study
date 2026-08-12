@@ -16,6 +16,9 @@ Curriculum source: [jwasham/coding-interview-university](https://github.com/jwas
 - `log/YYYY-MM-DD.md` — what I did that day
 - `scripts/` — `new-session.sh`, `progress.sh`
 
+`new-session.sh` opens today's log in `$EDITOR` (falls back to `vi` if unset).
+Set it once in `~/.bashrc`: `export EDITOR=nano`.
+
 Rule: **no topic is ticked until it is implemented from scratch and 2–3 practice
 problems are solved on it.**
 
