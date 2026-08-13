@@ -13,6 +13,8 @@ Curriculum source: [jwasham/coding-interview-university](https://github.com/jwas
 - `notes/NN-topic/` — one note file per topic, written in my own words
 - `src/cpp/NN-topic/`, `src/python/NN-topic/` — implementations from scratch
 - `problems/NN-topic/` — practice problems solved after learning the topic
+  (see [`reference/leetcode-map.md`](reference/leetcode-map.md) for suggested
+  problems per module)
 - `log/YYYY-MM-DD.md` — what I did that day
 - `scripts/` — `new-session.sh`, `progress.sh`
 
