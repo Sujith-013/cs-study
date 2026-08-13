@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Sanity check, warning only: never blocks a commit.
+#
+# Warns if the commit message's first line doesn't match the daily-study
+# format from DAILY.md: "NN-topic: description". Meta/scaffolding commits
+# (docs:, scripts:, chore:, ...) won't match -- that's expected, not an error.
+#
+# A separate file because git only makes the commit message available to the
+# commit-msg hook, not pre-commit.
+set -uo pipefail
+
+msg_file="$1"
+first_line="$(head -n1 "$msg_file")"
+
+if ! printf '%s' "$first_line" | grep -qE '^[0-9][0-9]-[a-z0-9-]+: .+'; then
+  echo "warning: commit message doesn't match 'NN-topic: description' format" >&2
+  echo "  got: \"$first_line\"" >&2
+fi
+
+exit 0

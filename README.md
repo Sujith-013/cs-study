@@ -21,6 +21,10 @@ Curriculum source: [jwasham/coding-interview-university](https://github.com/jwas
 `new-session.sh` opens today's log in `$EDITOR` (falls back to `vi` if unset).
 Set it once in `~/.bashrc`: `export EDITOR=nano`.
 
+`.githooks/` has warn-only sanity checks (commit message format, checkboxes
+ticked without matching source files) — they never block a commit. Enable
+once: `git config core.hooksPath .githooks`
+
 Rule: **no topic is ticked until it is implemented from scratch and 2–3 practice
 problems are solved on it.**
 

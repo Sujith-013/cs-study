@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Sanity check, warning only: never blocks a commit.
+#
+# Warns if this commit ticks a "- [x]" checkbox in a module's section of
+# README.md without staging any file under that module's src/cpp/, src/python/,
+# or problems/ directory -- a sign the box got ticked before the work landed.
+set -uo pipefail
+
+count_checked() {
+  # Per module-number, count of "- [x]" lines in its section (from its own
+  # heading up to the next heading of any level). Same parsing rule as
+  # scripts/progress.sh and scripts/index.sh.
+  awk '
+  function flush() { if (cur_num != "") print cur_num "\t" cur_done }
+  /^(## |### |#### )/ {
+    flush()
+    cur_num = ""; cur_done = 0
+    line = $0
+    pos1 = index(line, "`")
+    if (pos1 > 0) {
+      pos2 = index(substr(line, pos1 + 1), "`")
+      if (pos2 > 0) {
+        slug = substr(line, pos1 + 1, pos2 - 1)
+        if (slug ~ /^[0-9][0-9]-/) cur_num = substr(slug, 1, 2)
+      }
+    }
+    next
+  }
+  { if (cur_num != "" && $0 ~ /^[ \t]*- \[x\]/) cur_done++ }
+  END { flush() }
+  '
+}
+
+declare -A OLD_COUNT NEW_COUNT
+
+while IFS=$'\t' read -r num count; do
+  [ -n "$num" ] && OLD_COUNT["$num"]="$count"
+done < <(git show HEAD:README.md 2>/dev/null | count_checked)
+
+while IFS=$'\t' read -r num count; do
+  [ -n "$num" ] && NEW_COUNT["$num"]="$count"
+done < <(git show :README.md 2>/dev/null | count_checked)
+
+staged_files="$(git diff --cached --name-only --diff-filter=ACMR)"
+
+for num in "${!NEW_COUNT[@]}"; do
+  old="${OLD_COUNT[$num]:-0}"
+  new="${NEW_COUNT[$num]}"
+  if [ "$new" -gt "$old" ]; then
+    if ! printf '%s\n' "$staged_files" | grep -qE "^(src/cpp|src/python|problems)/${num}-"; then
+      echo "warning: README.md module $num has a newly-ticked checkbox but" >&2
+      echo "  no staged file under src/cpp/$num-*, src/python/$num-*, or problems/$num-*" >&2
+    fi
+  fi
+done
+
+exit 0
