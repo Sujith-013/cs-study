@@ -115,6 +115,8 @@ Per problem, before writing code:
 2. State the approach and its complexity **out loud**.
 3. Then code.
 
+Write it up from `problems/TEMPLATE.md` into `problems/NN-*/`.
+
 **Stuck rule:** 45 minutes, then read the editorial — and log the problem for
 re-solve from scratch in three days. A problem you read the answer to is not
 solved.
