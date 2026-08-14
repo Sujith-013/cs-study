@@ -38,3 +38,6 @@
 - [ ] [Subnetting Demystified - Part 5 CIDR Notation (video)](https://www.youtube.com/watch?v=t5xYI0jzOf4)
 - [ ] [Sockets: Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
 - [ ] [Sockets: Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

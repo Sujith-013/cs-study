@@ -28,3 +28,6 @@
 ### Available (from upstream)
 - [ ] [Stacks (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
 - [ ] [[Review] Stacks in 3 minutes (video)](https://youtu.be/KcT3aVgrrpU)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

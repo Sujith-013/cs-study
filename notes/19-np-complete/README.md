@@ -39,3 +39,6 @@
 - [ ] [Complexity: Approximation Algorithms (video)](https://www.youtube.com/watch?v=MEz1J9wY2iM&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=24)
 - [ ] [Complexity: Fixed-Parameter Algorithms (video)](https://www.youtube.com/watch?v=4q-jmGrmxKs&index=25&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
 - [ ] [Peter Norvig: near-optimal TSP solutions (Jupyter Notebook)](http://nbviewer.jupyter.org/url/norvig.com/ipython/TSP.ipynb)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

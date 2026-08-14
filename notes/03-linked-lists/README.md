@@ -37,3 +37,6 @@
 - [ ] [Why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
 - [ ] [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
 - [ ] [Doubly-linked List: Description (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

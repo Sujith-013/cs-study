@@ -31,3 +31,6 @@
 - [ ] [Make School: More Probability and Markov Chains (video)](https://www.youtube.com/watch?v=dNaJg-mLobQ)
 - [ ] [Khan Academy: Basic Theoretical Probability](https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic)
 - [ ] [Probability Explained (video)](https://www.youtube.com/watch?v=uzkc-qNVoOk&list=PLC58778F28211FA19)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

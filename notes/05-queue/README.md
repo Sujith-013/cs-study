@@ -29,3 +29,6 @@
 - [ ] [Queue (video)](https://www.coursera.org/lecture/data-structures/queues-EShpq)
 - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
 - [ ] [[Review] Queues in 3 minutes (video)](https://youtu.be/D6gu-_tmEpQ)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->

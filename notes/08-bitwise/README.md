@@ -45,3 +45,6 @@
 - [ ] [How To Count The Number Of Set Bits In a 32 Bit Integer](http://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-integer)
 - [ ] [Swap](https://bits.stephan-brumme.com/swap.html)
 - [ ] [Absolute Integer](https://bits.stephan-brumme.com/absInteger.html)
+
+## 8. Cards
+<!-- Anki cards, one per line: "Question :: Answer". scripts/cards.sh extracts these into reference/cards.tsv -->
