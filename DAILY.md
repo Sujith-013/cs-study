@@ -119,7 +119,8 @@ Write it up from `problems/TEMPLATE.md` into `problems/NN-*/`.
 
 **Stuck rule:** 45 minutes, then read the editorial — and log the problem for
 re-solve from scratch in three days. A problem you read the answer to is not
-solved.
+solved. Any problem where you read the editorial gets a row in
+`reference/resolve-queue.md`, re-solved from scratch three days later.
 
 Fill the log's problem table: number, name, verdict, approach, complexity.
 
