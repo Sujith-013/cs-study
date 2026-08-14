@@ -60,6 +60,10 @@ tests is treated as success, not failure.
 
 ---
 
+170 checkboxes below, 30 modules — coding-interview-university, self-paced,
+C++ and Python, from scratch. A box only ticks once a topic is implemented
+and 2–3 practice problems are solved. Daily loop: [DAILY.md](DAILY.md).
+
 ## Progress
 
 ### 0. Setup
