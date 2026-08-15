@@ -34,3 +34,23 @@ can't derive a cell, I don't know the structure/sort yet.
 | Heapsort | | | | | |
 | Radix sort | | | | | |
 | Counting sort | | | | | |
+
+## Glossary
+
+| Term | My definition |
+|---|---|
+| Amortized | |
+| Stable sort | |
+| In-place | |
+| Memoization | |
+| Tabulation | |
+| Adjacency list | |
+| Topological order | |
+| Load factor | |
+| Open addressing | |
+| Tail recursion | |
+| NP-complete | |
+| Cache line | |
+| Copy-on-write | |
+| Rolling hash | |
+| Prefix tree | |
