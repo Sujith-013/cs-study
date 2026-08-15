@@ -17,3 +17,12 @@ upstream)" checklists trace back to this copy.
 
 Notes, implementations and solutions in `notes/`, `src/` and `problems/` are my
 own original work.
+
+## License split
+
+This repo carries two licenses, covering different files:
+
+- **MIT** (`LICENSE`) — my own work: everything in `src/`, `notes/` and
+  `problems/`.
+- **CC BY-SA 4.0** — the derived checklist in `README.md` and the vendored
+  upstream material in `reference/ciu/`, per the terms above.
